@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "profile": "Abhijeet_Gavali.png",
+    "name": "Abhijeet Gavali",
+    "details": "Abhijeet_Gavali.png"
+  },
+  {
+    "id": 2,
+    "profile": "back_arrow.svg",
+    "name": "back arrow",
+    "details": "back_arrow.svg"
+  },
+  {
+    "id": 3,
+    "profile": "search.svg",
+    "name": "search",
+    "details": "search.svg"
+  },
+  {
+    "id": 4,
+    "profile": "xmark.svg",
+    "name": "xmark",
+    "details": "xmark.svg"
+  }
+]
