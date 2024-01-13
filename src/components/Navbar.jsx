@@ -6,7 +6,7 @@ export default function Navbar({ search, setSearch }) {
     <div className="navbar-container">
       <div className="navbar-logo">
         {/* @TODO */}
-        <img src="/logo.jpg" alt="logo" />
+        <img src="/images/logo.webp" alt="logo" />
       </div>
 
       <div className="navbar-title"></div>

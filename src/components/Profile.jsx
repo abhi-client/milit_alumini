@@ -9,7 +9,7 @@ export default function Profile({
   if (batch.title === "DSTSC")
     return (
       <>
-        <div style={{ textAlign: "center", marginTop: "10px" }}>
+        <div style={{ textAlign: "center", marginTop: "10px",fontSize:'30px' }}>
           {sub[activeSlide] == "AF" ? "AIR FORCE" : sub[activeSlide]}
         </div>
         <AwesomeSlider
@@ -19,14 +19,18 @@ export default function Profile({
             setActiveSlide(e.currentIndex);
           }}
         >
-          {Array.apply(null, Array(3)).map((_, id) => (
+          {Array.apply(null, Array(3)).map((_, id) => {
+            const url = `/images/${batch.title}/${batch.id}${sub[id]}.JPG`
+            console.log(url)
+            return (
+              <div key={id}>
             <img
-              key={id}
-              src={`/images/${batch.title}/${batch.id}${sub[activeSlide]}.JPG`}
+              
+              src={url}
               alt=""
-              style={{ objectFit: "contain", width: "100%", height: "88vh" }}
-            />
-          ))}
+              style={{ objectFit: "contain", width: "100%", height: "80vh" }}
+            /></div>
+          )})}
         </AwesomeSlider>
       </>
     );

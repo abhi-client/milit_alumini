@@ -7,6 +7,9 @@
 .navbar-logo {
   display: flex;
   padding: 10px;
+  height: 100px;
+  width: 100px;
+  z-index: 10000;
 }
 
 .navbar-title {

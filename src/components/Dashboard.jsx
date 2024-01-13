@@ -37,7 +37,7 @@ export default function Dashboard() {
             onClick={handleClose}
             style={{
               position: "absolute",
-              left: "30px",
+              left: "100px",
 
               display: "flex",
               alignItems: "center",
@@ -59,7 +59,7 @@ export default function Dashboard() {
         ) : (
           <></>
         )}
-        <div>
+        <div style={{fontSize:'40px'}}>
           {batch[activeSlide]?.title}{" "}
           {activeBatchInfo.id ? " - " + activeBatchInfo.id : ""}
         </div>

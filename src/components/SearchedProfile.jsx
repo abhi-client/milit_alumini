@@ -25,11 +25,13 @@ export default function SearchedProfile({ officers }) {
                 className="image"
                 src={`/images/profile/${officer.profile}`}
                 alt=""
+                width={"40%"}
               />
               <img
                 className="image"
                 src={`/images/details/${officer.details}`}
                 alt=""
+                width={"60%"}
               />
             </div>
           ))}
