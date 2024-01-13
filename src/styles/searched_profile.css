@@ -1,6 +1,7 @@
 #searched-profile {
   height: 95vh;
   overflow: scroll;
+  background-color: #fcfcfc;
 }
 
 #searched-profile .awssld__content {

@@ -1,6 +1,7 @@
 #dashboard {
   height: 95vh;
   overflow: scroll;
+  background-color: #fcfcfc;
 }
 
 #dashboard .awssld__content {
