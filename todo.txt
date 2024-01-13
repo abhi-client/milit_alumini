@@ -1,0 +1,10 @@
+install node from https://nodejs.org/en/download/
+add profiles, details, TSC, NTSC, TSOC, DSTSC folders in images folder
+add data/officers.json by running scripts on images 
+open cmd 
+go to the working folder
+run: npm i
+run: npm run build
+run: npm run preview
+
+check for any fixes
