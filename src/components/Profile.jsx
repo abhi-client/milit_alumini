@@ -1,7 +1,6 @@
 export default function Profile({
-  batch = { title: "ABC", value: 12, id: 1 },
+  batch = { title: "TSC", value: 23, id: 1 },
 }) {
-  // @TODO
   return (
     <img
       src={`/images/${batch.title}/${batch.id}.JPG`}

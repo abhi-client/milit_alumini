@@ -13,12 +13,11 @@ export default function Dashboard() {
     setIsSelected(false);
   };
 
-  // @TODO
   const batch = [
-    { title: "ABC", value: 12 },
-    { title: "XYZ", value: 25 },
-    { title: "PQR", value: 42 },
-    { title: "LMN", value: 6 },
+    { title: "TSC", value: 23 },
+    { title: "NTSC", value: 41 },
+    { title: "TSOC", value: 43 },
+    { title: "DSTSC", value: 6 },
   ];
 
   return (
@@ -34,7 +33,7 @@ export default function Dashboard() {
         }}
       >
         {isSelected ? (
-          <div
+          <button
             onClick={handleClose}
             style={{
               position: "absolute",
@@ -44,6 +43,10 @@ export default function Dashboard() {
               alignItems: "center",
               justifyContent: "center",
               gap: "10px",
+
+              outline: "none",
+              border: "none",
+              background: "none",
             }}
           >
             <img
@@ -52,7 +55,7 @@ export default function Dashboard() {
               style={{ width: "20px" }}
             />{" "}
             back
-          </div>
+          </button>
         ) : (
           <></>
         )}

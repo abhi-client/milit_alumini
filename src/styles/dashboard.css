@@ -31,23 +31,18 @@
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-/* @TODO */
-.box-ABC {
-  width: 200px;
-  height: 200px;
-}
-
-.box-XYZ {
+.box-TSC {
   width: 140px;
   height: 120px;
 }
 
-.box-PQR {
+.box-TSOC,
+.box-NTSC {
   width: 100px;
   height: 100px;
 }
 
-.box-LMN {
+.box-DSTSC {
   width: 300px;
   height: 300px;
 }
