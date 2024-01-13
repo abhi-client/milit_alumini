@@ -14,6 +14,7 @@ export default function Dashboard() {
   };
 
   const batch = [
+    { title: "", value: 0 },
     { title: "TSC", value: 23 },
     { title: "NTSC", value: 41 },
     { title: "TSOC", value: 43 },
@@ -74,7 +75,11 @@ export default function Dashboard() {
             setActiveSlide(e.currentIndex);
           }}
         >
-          {batch.map((bach) => (
+          {batch.map((bach,id) => id==0?<div><img
+              src="/images/bg.JPG"
+              alt=""
+              style={{ width: "100%", height:'100vh',objectFit:'cover' }}
+            /></div>:
             <div key={bach.title} className="container">
               {Array.apply(null, Array(bach.value)).map((_, id) => (
                 <div
@@ -89,7 +94,7 @@ export default function Dashboard() {
                 </div>
               ))}
             </div>
-          ))}
+          )}
         </AwesomeSlider>
       )}
     </div>
