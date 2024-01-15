@@ -6,7 +6,7 @@ export default function Profile({
 }) {
   const [activeSlide, setActiveSlide] = useState(0);
   const sub = ["ARMY", "AF", "NAVY"];
-  if (batch.title === "DSTSC")
+  if (batch.title.split('(')[1].split(')')[0] === "DSTSC")
     return (
       <>
         <div style={{ textAlign: "center", marginTop: "10px",fontSize:'30px' }}>
@@ -20,7 +20,7 @@ export default function Profile({
           }}
         >
           {Array.apply(null, Array(3)).map((_, id) => {
-            const url = `/images/${batch.title}/${batch.id}${sub[id]}.JPG`
+            const url = `/images/${batch.title.split('(')[1].split(')')[0]}/${batch.id}${sub[id]}.JPG`
             console.log(url)
             return (
               <div key={id}>
@@ -36,7 +36,7 @@ export default function Profile({
     );
   return (
     <img
-      src={`/images/${batch.title}/${batch.id}.JPG`}
+      src={`/images/${batch.title.split('(')[1].split(')')[0]}/${batch.id}.JPG`}
       alt=""
       style={{ objectFit: "contain", width: "100%", height: "88vh" }}
     />

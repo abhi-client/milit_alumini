@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <div>
-      <button className="fullscreen-btn" onClick={handle.enter}>
+      <button className="fullscreen-btn" onClick={handle.enter} style={{display:'none'}}>
         Enter fullscreen
       </button>
       <FullScreen handle={handle}>

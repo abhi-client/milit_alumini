@@ -15,10 +15,10 @@ export default function Dashboard() {
 
   const batch = [
     { title: "", value: 0 },
-    { title: "TSC", value: 23 },
-    { title: "NTSC", value: 41 },
-    { title: "TSOC", value: 43 },
-    { title: "DSTSC", value: 6 },
+    { title: "Technical Staff Course (TSC)", value: 23 },
+    { title: "Naval Technical Staff Course (NTSC)", value: 41 },
+    { title: "Technical Staff Officers Course (TSOC)", value: 43 },
+    { title: "Defence Services Technical Staff Course (DSTSC)", value: 6 },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function Dashboard() {
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
-          marginTop: "30px",
+          minHeight:'50px'
         }}
       >
         {isSelected ? (
@@ -60,10 +60,34 @@ export default function Dashboard() {
         ) : (
           <></>
         )}
-        <div style={{fontSize:'40px'}}>
+        <div style={{fontSize:'30px', fontWeight:'bolder'}}>
           {batch[activeSlide]?.title}{" "}
           {activeBatchInfo.id ? " - " + activeBatchInfo.id : ""}
         </div>
+        <button onClick={()=>{
+          setActiveSlide(0);
+          handleClose();
+        }}
+        style={{
+          position: "absolute",
+              right: "100px",
+
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "10px",
+
+              outline: "none",
+              border: "none",
+              background: "none",
+        }}
+
+        > <img
+        src="/images/house-solid.svg"
+        alt=""
+        style={{ width: "20px" }}
+      />{" "}
+      Home</button>
       </div>
       {isSelected ? (
         <Profile batch={activeBatchInfo} />
@@ -84,7 +108,7 @@ export default function Dashboard() {
               {Array.apply(null, Array(bach.value)).map((_, id) => (
                 <div
                   key={id}
-                  className={"box box-" + bach.title}
+                  className={"box box-" + bach.title.split('(')[1].split(')')[0]}
                   onClick={() => {
                     setIsSelected(true);
                     setActiveBatchInfo({ ...bach, id: id + 1 });

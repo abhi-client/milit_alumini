@@ -31,8 +31,9 @@
 }
 
 .image {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 20px;
   overflow: hidden;
-  width: 45%;
+  width: 40%;
+  height: 100%;
 }
