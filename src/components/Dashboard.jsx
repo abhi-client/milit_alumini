@@ -30,6 +30,7 @@ export default function Dashboard() {
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
+          marginTop:"20px",
           minHeight:'50px'
         }}
       >
@@ -60,7 +61,7 @@ export default function Dashboard() {
         ) : (
           <></>
         )}
-        <div style={{fontSize:'30px', fontWeight:'bolder'}}>
+        <div style={{fontSize:'50px', fontWeight:'bolder'}}>
           {batch[activeSlide]?.title}{" "}
           {activeBatchInfo.id ? " - " + activeBatchInfo.id : ""}
         </div>
