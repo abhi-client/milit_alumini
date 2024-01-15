@@ -9,3 +9,4 @@ async function getFiles(dir, files = []) {
 }
 
 getFiles('./public/images/details')
+getFiles('./public/images/profile')
