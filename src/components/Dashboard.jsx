@@ -16,9 +16,9 @@ export default function Dashboard() {
   const batch = [
     { title: "", value: 0 },
     { title: "Technical Staff Course (TSC)", value: 23 },
-    { title: "Naval Technical Staff Course (NTSC)", value: 41 },
+    { title: "Naval Technical Staff Course (NTSC)", value: 45 },
     { title: "Technical Staff Officers Course (TSOC)", value: 43 },
-    { title: "Defence Services Technical Staff Course (DSTSC)", value: 6 },
+    { title: "Defence Services Technical Staff Course (DSTSC)", value: 10 },
   ];
 
   return (
